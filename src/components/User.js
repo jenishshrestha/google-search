@@ -6,7 +6,7 @@ export default function User() {
   if (session) {
     return (
       <>
-        <img
+        <Image
           onClick={signOut}
           src={session.user.image}
           alt="user-image"

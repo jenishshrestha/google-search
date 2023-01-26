@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Next.js + Google API</title>
+        <title>Google</title>
         <meta
           name="description"
           content="Google clone with Next.js and Google API"
@@ -19,11 +19,13 @@ const Home = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <Header />
+      <div class="flex flex-col h-screen">
+        <Header />
 
-      <Body />
+        <Body />
 
-      <Footer />
+        <Footer />
+      </div>
     </>
   );
 };
