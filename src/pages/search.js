@@ -12,21 +12,22 @@ import { useRouter } from "next/router";
 export default function Search({ results }) {
   const router = useRouter();
   return (
-    <div>
+    <>
       <Head>
         <title>{router.query.term} - Search page</title>
+        <meta name="description" content="Programmable Search Engine" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
-      {/* Search Header */}
       <SearchHeader />
 
-      {/* Search web and Images Results */}
       {router.query.searchType === "image" ? (
         <ImageResults results={results} />
       ) : (
         <SearchResults results={results} />
       )}
-    </div>
+    </>
   );
 }
 

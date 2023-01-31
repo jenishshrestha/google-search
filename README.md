@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) and Google Api project.
+This is a [Next.js](https://nextjs.org/) and Google Programmable Search Engine.
 
 ## Getting Started
 

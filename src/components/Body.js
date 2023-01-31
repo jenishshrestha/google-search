@@ -1,8 +1,6 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useRouter } from "next/router";
-import Head from "next/head";
 import Image from "next/image";
-import { useState } from "react";
 
 // images
 import SearchIcon from "@icon/search.svg";
@@ -11,7 +9,6 @@ import XIcon from "@icon/xicon.svg";
 import Logo from "@public/logo.png";
 
 export default function Body() {
-  // state
   const [showX, setShowX] = useState(0);
 
   const router = useRouter();
@@ -33,7 +30,6 @@ export default function Body() {
 
   function search(event) {
     event.preventDefault();
-    // console.log(searchInputRef);
     const term = searchInputRef.current.value;
     if (!term.trim()) return;
     router.push(`/search?term=${term.trim()}&searchType=`);
