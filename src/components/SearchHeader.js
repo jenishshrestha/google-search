@@ -21,7 +21,7 @@ export default function SearchHeader() {
   }
   return (
     <header className="sticky top-0 bg-white">
-      <div className="flex w-full p-6 items-center">
+      <div className="flex items-center w-full p-6">
         <Image
           onClick={() => router.push("/")}
           width="120"
@@ -30,8 +30,8 @@ export default function SearchHeader() {
           className="cursor-pointer"
           src={Logo.src}
         />
-        <div class="grow">
-          <form className="flex border border-gray-200 rounded-full shadow-lg px-6 py-3 ml-10 mr-5 flex-grow max-w-3xl items-center">
+        <div className="grow">
+          <form className="flex items-center flex-grow max-w-3xl px-6 py-3 ml-10 mr-5 border border-gray-200 rounded-full shadow-lg">
             <input
               type="text"
               defaultValue={router.query.term}
@@ -40,10 +40,10 @@ export default function SearchHeader() {
             />
             <XIcon
               onClick={() => (searchInputRef.current.value = "")}
-              className="h-7 text-gray-500 cursor-pointer sm:mr-3"
+              className="text-gray-500 cursor-pointer h-7 sm:mr-3"
             />
-            <MicrophoneIcon className="h-6 hidden sm:inline-flex text-blue-500 pl-4 border-l-2 border-gray-300 mr-3" />
-            <SearchIcon className="h-6 hidden sm:inline-flex text-blue-500" />
+            <MicrophoneIcon className="hidden h-6 pl-4 mr-3 text-blue-500 border-l-2 border-gray-300 sm:inline-flex" />
+            <SearchIcon className="hidden h-6 text-blue-500 sm:inline-flex" />
             <button onClick={search} type="submit" hidden></button>
           </form>
         </div>

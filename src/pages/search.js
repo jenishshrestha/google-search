@@ -29,3 +29,20 @@ export default function Search({ results }) {
     </div>
   );
 }
+
+export async function getServerSideProps(context) {
+  const startIndex = context.query.start || "1";
+  const data = await fetch(
+    `https://www.googleapis.com/customsearch/v1?key=${
+      process.env.SEARCH_API_KEY
+    }&cx=${process.env.CONTEXT_KEY}&q=${context.query.term}${
+      context.query.searchType && "&searchType=image"
+    }&start=${startIndex}`
+  ).then((response) => response.json());
+
+  return {
+    props: {
+      results: data,
+    },
+  };
+}

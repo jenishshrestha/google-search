@@ -19,12 +19,10 @@ const Home = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <div class="flex flex-col h-screen">
+      <div className="flex flex-col h-screen">
         <Header />
 
         <Body />
-
-        <Footer />
       </div>
     </>
   );
