@@ -5,7 +5,7 @@ import User from "./User";
 import SearchHeaderOptions from "@/components/SearchHeaderOptions";
 
 // images
-import Logo from "@public/logo.png";
+import Logo from "@public/logo.jpg";
 import SearchIcon from "@icon/search.svg";
 import MicrophoneIcon from "@icon/microphone.svg";
 import XIcon from "@icon/xicon.svg";

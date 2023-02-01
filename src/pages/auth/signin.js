@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import { getProviders, signIn } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@public/logo.png";
+import Logo from "@public/logo.jpg";
 
 export default function signin({ providers }) {
   return (
