@@ -10,10 +10,6 @@ export default function Header() {
   return (
     <header className="flex justify-end p-5 space-x-4 text-sm text-gray-700">
       <div className="flex items-center space-x-4">
-        <Link href="https://mail.google.com" className={link}>
-          Gmail
-        </Link>
-
         <a
           onClick={() =>
             router.push(

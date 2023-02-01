@@ -6,10 +6,10 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Google</title>
+        <title>Implementation of Google Programmable Search Engine</title>
         <meta
           name="description"
-          content="Google clone with Next.js and Google API"
+          content="Google Programmable Search Engine Implementation in Next.js"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />

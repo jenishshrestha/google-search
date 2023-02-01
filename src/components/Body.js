@@ -6,7 +6,7 @@ import Image from "next/image";
 import SearchIcon from "@icon/search.svg";
 import MicrophoneIcon from "@icon/microphone.svg";
 import XIcon from "@icon/xicon.svg";
-import Logo from "@public/logo.png";
+import Logo from "@public/logo.jpg";
 
 export default function Body() {
   const [showX, setShowX] = useState(0);
