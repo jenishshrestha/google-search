@@ -24,7 +24,9 @@ export default function SearchResults({ results }) {
               </h2>
             </a>
           </div>
-          <p className="text-gray-600">{Parser(result?.htmlSnippet)}</p>
+          <p className="text-gray-600">
+            {!("htmlSnippet" in result) ? "" : Parser(result?.htmlSnippet)}
+          </p>
         </div>
       ))}
 
